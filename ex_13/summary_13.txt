@@ -1,0 +1,24 @@
+1) Put the designed decision tree into this file.
+
+
+
+
+
+
+2) Add the answer for the algorithm assignment here.
+If x3 < 2.45 then it is setosa.
+If(x3>=2.45 ∧ x4>=1.75) ∨ (x3>=2.45 ∧ x4<1.75 ∧ x3>=4.95) ∨ (x3>= 2.45 ∧ x4 < 1.75 ∧ x3 < 4.95 ∧ x4 >= 1.65) then it is verginica.
+If x3 >= 2.45 ∧ x4 < 1.75 ∧ x3 < 4.95 ∧ x4 <= 1.65 then it is versicolor. 
+
+
+
+
+
+
+
+
+
+
+
+
+

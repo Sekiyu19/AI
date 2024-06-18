@@ -1,0 +1,40 @@
+1) What are the algorithms used in this project?
+前向き推論 forward inference (Forward reasoning), 
+Lexicographic sort,
+バブルソート bubble sort
+
+
+
+2) Describe the algorithms briefly based on your understanding.
+前向き推論
+
+観測データを記憶。
+観測データを満たすルールのセット（conflict set）を見つける。
+いくつかの基準に基づいてルールのセットからルールを選択する。
+選択したルールのアクションを行う。
+結果が求めたい基準を満たしているなら終了。満たしていないならルールのセットを見つけるところに戻る。
+
+
+
+3) Explain the meaning of the results obtained by running the completed program.
+Targetが何なのかをObservationsに基づいてOutput formatになるまで前向き推論を行なった結果。
+
+
+4) Add the algorithm assignment here.
+
+-------------------------------------------------------------------------
+| Cycles | Conflict Set | Selected rule | Status of the working memory  |
+-------------------------------------------------------------------------
+|   0    |              |               | f1: x has body hair           |
+|        |              |               | f2: x has sharp teeth         |
+|        |              |               | f3: x has sharp claws         |
+|        |              |               | f4: x has a brown (ocher)     |
+|        |              |               |       body color              |
+|        |              |               | f5: x has a medium sized body |
+-------------------------------------------------------------------------
+|   1    | M1           | M1            | f6: x is a mammal             |
+-------------------------------------------------------------------------
+|   2    | M1,C2        | C2            | f5: x is a carnivore          |
+-------------------------------------------------------------------------
+|   3    | M1,C2,C4     | C4            | f5: x is a fox                |
+-------------------------------------------------------------------------

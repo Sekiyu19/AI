@@ -1,0 +1,2 @@
+parent(X,taro),write(X),nl,fail.
+ancestor(sofu,X),write(X),nl,fail.

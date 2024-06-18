@@ -1,0 +1,37 @@
+1) Plot the results using “gnuplot”, and save the 3-D figure.
+
+The name file should be “plot.png”, and the coordinates are as follows:
+
+(X, Y, Z) = (v, r, b)
+
+From the figure, try to describe the relation between b and (v, r).
+
+
+
+
+
+
+
+
+
+
+2) Add the results for algorithm assignment here.
+Slow = 1 - (|20 - Speed| / 20)
+Normal = 1 - (|40 - Speed| / 20)
+A little bit fast = 1 - (|60 - Speed| / 20)
+Fast = 1 - (|80 - Speed| / 20)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

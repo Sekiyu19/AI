@@ -1,0 +1,81 @@
+1) Put prog_08_1.pl here
+p(X,Y):-q(X),r(Y).
+    q(X):-s(X).
+    r(Y):-t(Y).
+    s(a).
+    t(b).
+
+
+2) Results of prog_08_1.pl
+1 ?- [prog_08_02].
+true.
+2 ?- p(a,b).
+true.
+
+
+3) Put prog_08_2.pl here
+parent(sofu,otosan).
+parent(msofu,okasan).
+parent(otosan,miho).
+parent(otosan,taro).
+parent(otosan,jiro).
+parent(X,Y):-married(Z,X),parent(Z,Y).
+married(otosan,okasan).
+married(msofu,msobo).
+married(sofu,sobo).
+ancestor(X,Y):-parent(X,Y).
+ancestor(X,Y):-parent(X,Z),ancestor(Z,Y).
+
+
+
+4) Results of prog_08_2.pl
+3 ?- parent(X,taro).
+X = otosan ;
+X = okasan ;
+false.
+
+4 ?- ancestor(msofu,X).
+X = otosan ;
+X = miho ;
+X = taro ;
+X = jiro ;
+false.
+
+
+5) Add algorithm assignment here.
+親節1：¬L(a)
+親節2：L(x5) ∨ ￢C(x5) ∨ ￢B2(x5) ∨ ￢B3(x5)
+単一化：x5 = a
+導出節：￢C(a) ∨ ￢B2(a) ∨ ￢B3(a)
+
+親節1：上の導出節と同じ
+親節2：C(x3) ∨ ￢M1(x3) ∨ ￢E(x3)
+単一化：x3 = a
+導出節：￢M1(a) ∨ ￢E(a) ∨ ￢B2(a) ∨ ￢B3(a)
+
+親節1：上の導出節と同じ
+親節2：M1(x1) ∨ ￢H(x1)
+単一化：x1 = a
+導出節：￢H(a) ∨ ￢E(a) ∨ ￢B2(a) ∨ ￢B3(a)
+
+親節1：上の導出節と同じ
+親節2：H(a)
+単一化：必要なし
+導出節：￢E(a) ∨ ￢B2(a) ∨ ￢B3(a)
+
+親節1：上の導出節と同じ
+親節2：E(a)
+単一化：必要なし
+導出節：￢B2(a) ∨ ￢B3(a)
+
+親節1：上の導出節と同じ
+親節2：B2(a)
+単一化：必要なし
+導出節：￢B3(a)
+
+親節1：上の導出節と同じ
+親節2：B3(a)
+単一化：必要なし
+導出節：Φ
+
+¬L(a)が偽なのでL(a)は真である。

@@ -1,0 +1,10 @@
+# Discussion on the program and the results
+ 
+Discussion
+From generation = 10, the average fitness value converges to the highest fitness value.
+
+
+# Add the answer to the algorithm assignment here.
+ 
+Observations
+From generation = 15, the average fitness value converges to the highest fitness value.

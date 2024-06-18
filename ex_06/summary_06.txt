@@ -1,0 +1,21 @@
+1) What kind of ontology is used in this project?
+StudentInfoFrame
+
+
+
+2) Describe the method briefly based on your understanding.
+StudentInfoFrameに入っているstudentのnameと検索キーワードのnameが一致するstudentを取得してその情報を表示する。
+
+
+
+3) Explain the meaning of the results obtained by running the completed program.
+ask A B でAさんのBについての情報を表示する。
+
+
+
+
+4) Add the algorithm assignment here.
+
+
+
+

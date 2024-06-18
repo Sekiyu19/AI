@@ -1,0 +1,1 @@
+paps summary_06.txt | ps2pdf -> report_06.pdf | chmod -R 705 ./*

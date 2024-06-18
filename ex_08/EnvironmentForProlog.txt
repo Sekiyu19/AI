@@ -1,0 +1,19 @@
+I. In "Linux OS" - in std1, std2
+It uses Quintus Prolog: "qp"
+The location of qp is "/usr/local/qp/bin/qp"
+If it has not been setup in your shell, you can set as below.
+-- For QP Setup --
+% set path=(/usr/local/qp/bin $path)
+% rehash
+
+To get the result from the fact "p(a,b)."  (If it is in the "data.txt" file.)
+% qp -l prog_08.pl < data.txt 
+
+
+II. In "Mac OS" - in std5, std6
+It uses SWI Prolog: "swipl"
+The location of swipl is "/usr/local/bin/swipl"
+It had been setup already in PCs of the rooms.
+"Working Example"
+% swipl -l prog_08.pl < data_08.txt
+
